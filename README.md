@@ -3,6 +3,13 @@
 
 Add Default files to you project quickly and easily
 
+- add any file to the default list
+- remove any file from the default list
+- update any file from the defualt list
+- list the default list 
+- show version
+- show help
+
 ### Command Line Options
 
 
