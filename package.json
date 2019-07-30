@@ -1,6 +1,6 @@
 {
   "name": "jsmold",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A simple javascript project generator",
   "main": "index.js",
   "os": [
@@ -14,7 +14,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "jsmold": "./bin/jsmold.js"
+    "jsmold": "./bin/jsmold"
   },
   "repository": {
     "type": "git",
