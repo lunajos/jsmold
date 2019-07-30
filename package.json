@@ -1,6 +1,6 @@
 {
   "name": "jsmold",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple javascript project generator",
   "main": "index.js",
   "os": [
