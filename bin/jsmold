@@ -1,0 +1,70 @@
+#!/usr/bin/env node
+'use strict';
+
+// Get option files
+var help = require('../app/_help');
+var init = require('../app/_init');
+var initAll = require('../app/_init_all');
+var add  = require('../app/_add');
+var list = require('../app/_list');
+var remove = require('../app/_remove');
+var update = require('../app/_update');
+var version = require('../app/_version');
+
+// Find Arguments
+for(var i=2; i<process.argv.length; i++) {
+
+  var ARGS = process.argv[i];         // [option]
+  var argAfter = process.argv[i+1];    // [<file> | <folder>]
+  var pathExecuted = process.argv[1]; // path excecuted
+
+  // Check for options
+  switch (ARGS) {
+
+    case '-i':
+    case '--init':
+      init(argAfter, pathExecuted);
+      break;
+
+    case '-I':
+      initAll(argAfter, pathExecuted);
+      break;
+
+    case '-a':
+    case '--add':
+      add(argAfter);
+      break;
+
+    case '-r':
+    case '--remove':
+      remove(argAfter);
+      break;
+
+    case '-u':
+    case '--update':
+      update(argAfter);
+      break;
+
+    case '-l':
+    case '--list':
+      list();
+      break;
+
+    case '-h':
+    case '--help':
+      help();
+      break;
+
+    case '-v':
+    case '--version':
+      version();
+      break;
+
+    default:
+      if(i !== 4) {
+//        help();
+      }
+
+    }
+
+}

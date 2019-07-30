@@ -1,0 +1,42 @@
+{
+  "name": "jsmold",
+  "version": "1.0.0",
+  "description": "A simple javascript project generator",
+  "main": "index.js",
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "engines": {
+    "node": "v8.16.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "jsmold": "./bin/jsmold.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lunajos/jsmold.git"
+  },
+  "keywords": [
+    "automation",
+    "default",
+    "files",
+    "generator",
+    "project",
+    "template",
+    "boilerplate"
+  ],
+  "author": "Jose L",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lunajos/jsmold/issues"
+  },
+  "homepage": "https://github.com/lunajos/jsmold#readme",
+  "dependencies": {
+    "async": "^3.1.0",
+    "chalk": "^2.4.2"
+  }
+}
