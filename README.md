@@ -3,26 +3,28 @@
 
 Add Default files to you project quickly and easily
 
-- add any file to the default list
-- remove any file from the default list
-- update any file from the defualt list
-- list the default list 
-- show version
-- show help
+You can completly remove and/or add your own default files to the list.
+
 
 ### Command Line Options
 
+- `-a, --add` Add any file to default list
+- `-r, --remove` Remove any file from default list
+- `-u, --update` Update any file from default list
+- `-l, --list` Show default list 
+- `-v, --version` Show version
+- `-h, --help` Show help
 
 ``` 
-$ projs -h
+$ jsmold -h
 
-Usage: projs [options] [<file> | <folder>]
+Usage: jsmold [options] [<file>|<folder>]
 
 	-i, --init <folder>
-		Initialize Project and prompt for each file
+		Initialize project and use default 
 	
 	-I	<folder>
-		Initialize project and use default 
+		Initialize project and prompt for each file
 		
 	-a, --add <file>		
 		Add a file to default list
@@ -52,3 +54,4 @@ Usage: projs [options] [<file> | <folder>]
 - `.gitignore`
 - `.editorconfig`
 - `.jscsrc`
+
