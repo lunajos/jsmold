@@ -1,4 +1,4 @@
-# JSProd
+# JSMOLD
 ## Initialize a Javascript Project
 
 Add Default files to you project quickly and easily
